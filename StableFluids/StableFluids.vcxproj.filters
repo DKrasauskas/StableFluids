@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{2a7dd9f7-eec2-4ac9-8d21-8ad4f72228c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda">
+      <UniqueIdentifier>{51be4738-73c7-448e-ad4b-56866a305234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shader">
+      <UniqueIdentifier>{3159d892-e55f-4382-b546-6f780d9ca2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\GLSL">
+      <UniqueIdentifier>{4230d103-3a74-4285-a095-1dfd8644c482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{959ea21b-f09f-4a42-9614-87deb4d9ef4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda\cg">
+      <UniqueIdentifier>{0e678428-2596-4dca-aea2-e788eebbd303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda\linalg">
+      <UniqueIdentifier>{b2b9afbb-7ead-4c50-9c6c-b8951ac9cdc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda\operators">
+      <UniqueIdentifier>{16bd0614-0dd0-411c-aecb-ef5a6e0d90f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>OpenGL\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>OpenGL\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="grid.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="linalg.h">
+      <Filter>Cuda\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="cg.h">
+      <Filter>Cuda\cg</Filter>
+    </ClInclude>
+    <ClInclude Include="solve.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="advect.h">
+      <Filter>Cuda\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Cuda\operators</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Shader.cpp">
+      <Filter>OpenGL\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>OpenGL\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\glad\src\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vertex.glsl">
+      <Filter>OpenGL\GLSL</Filter>
+    </None>
+    <None Include="Fragment.glsl">
+      <Filter>OpenGL\GLSL</Filter>
+    </None>
+  </ItemGroup>
+</Project>
